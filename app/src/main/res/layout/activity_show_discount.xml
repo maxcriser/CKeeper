@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_toolbar_back_search"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/linear_frame_title_discount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                card_view:cardBackgroundColor="@color/gray_bottom_create_card"
+                                card_view:cardCornerRadius="0dp"
+                                card_view:cardElevation="4dp">
+
+                                <include layout="@layout/fragment_edit_name"/>
+
+                                <TextView
+                                    android:id="@+id/title_show_discount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:gravity="center|center"
+                                    android:text="@string/name"
+                                    android:textColor="@color/text_toolbar"
+                                    android:textSize="18sp"/>
+                            </android.support.v7.widget.CardView>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingBottom="16dp"
+                                android:paddingTop="16dp"
+                                android:textColor="@color/black">
+
+                                <com.maxcriser.cards.view.labels.BarcodeEan
+                                    android:id="@+id/show_barcode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="104dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="24dp"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="172sp"/>
+                            </FrameLayout>
+
+                            <include layout="@layout/fragment_show_photos"/>
+
+                            <LinearLayout
+                                android:id="@+id/linear_frame_actions_discount"
+                                android:layout_width="match_parent"
+                                android:layout_height="56dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <include layout="@layout/fragment_cancel_save"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include layout="@layout/floating_menu_show"/>
+
+</merge>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="36dp"
+        android:paddingStart="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="oneInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_1"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:textColor="@color/gray_shadow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="twoInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_2"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/abc"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="threeInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_3"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/def"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="fourInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_4"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/ghi"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="fiveInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_5"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/jkl"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="sixInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_6"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/mno"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="sevenInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_7"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/pqrs"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="eightInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_8"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/tuv"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="nineInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_9"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/wxyz"
+                    android:textColor="@color/gray_shadow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="zeroInput"
+                android:orientation="vertical">
+
+                <com.maxcriser.cards.view.labels.RobotoThin
+                    android:id="@+id/button_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/keyboard_number_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="onDeleteClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_backspace_white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

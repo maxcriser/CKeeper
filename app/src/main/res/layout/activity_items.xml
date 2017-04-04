@@ -1,0 +1,53 @@
+<merge android:id="@+id/drawer_layout"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fitsSystemWindows="false">
+
+    <include layout="@layout/fragment_add_new_card"/>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/fragment_toolbar_back_search"/>
+
+        <include layout="@layout/fragment_line_search"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/height_toolbar"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                android:paddingTop="8dp"
+                android:scrollbars="vertical"/>
+
+            <include layout="@layout/fragment_empty_page"/>
+
+            <include layout="@layout/fragment_no_results_for"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</merge>

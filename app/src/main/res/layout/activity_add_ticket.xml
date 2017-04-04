@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_toolbar_back_search"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/fragment_header_add_new_card"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp">
+
+                            <EditText
+                                android:id="@+id/title_name_ticket"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/name_ticket"
+                                android:inputType="text"
+                                android:textSize="16sp"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/layout_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp">
+
+                            <EditText
+                                android:id="@+id/cardholder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/owner"
+                                android:inputType="text"
+                                android:textSize="16sp"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                card_view:cardCornerRadius="2dp"
+                                card_view:cardElevation="2dp">
+
+                                <com.maxcriser.cards.view.labels.RobotoThin
+                                    android:id="@+id/date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="start"
+                                    android:layout_marginStart="16dp"
+                                    android:gravity="center"
+                                    android:onClick="onDateClicked"
+                                    android:textColor="@color/text_toolbar"
+                                    android:textSize="16sp"
+                                    tools:text="16 SEPT 2016"/>
+
+                                <com.maxcriser.cards.view.labels.RobotoThin
+                                    android:id="@+id/time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="16dp"
+                                    android:gravity="center|end"
+                                    android:onClick="onTimeClicked"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_toolbar"
+                                    android:textSize="16sp"
+                                    tools:text="12:30 PM"/>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="156dp">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="16dp"
+                                android:layout_weight="1"
+                                card_view:cardCornerRadius="2dp"
+                                card_view:cardElevation="2dp">
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_camera_black"/>
+
+                                <com.maxcriser.cards.view.labels.RobotoThin
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/front"
+                                    android:textColor="@color/text_toolbar"/>
+
+                                <ImageView
+                                    android:id="@+id/front_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:onClick="onFrontPhotoClicked"
+                                    android:scaleType="centerCrop"/>
+
+                                <FrameLayout
+                                    android:id="@+id/remove_front"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="36dp"
+                                    android:layout_gravity="end|bottom"
+                                    android:background="@color/gray_shadow"
+                                    android:onClick="onRemoveFrontClicked"
+                                    android:visibility="gone">
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/ic_delete_white"/>
+
+                                </FrameLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="16dp"
+                                android:layout_weight="1"
+                                card_view:cardCornerRadius="2dp"
+                                card_view:cardElevation="2dp">
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_camera_black"/>
+
+                                <com.maxcriser.cards.view.labels.RobotoThin
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/back"
+                                    android:textColor="@color/text_toolbar"/>
+
+                                <ImageView
+                                    android:id="@+id/back_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:onClick="onBackPhotoClicked"
+                                    android:scaleType="centerCrop"/>
+
+                                <FrameLayout
+                                    android:id="@+id/remove_back"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="36dp"
+                                    android:layout_gravity="end|bottom"
+                                    android:background="@color/gray_shadow"
+                                    android:onClick="onRemoveBackClicked"
+                                    android:visibility="gone">
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/ic_delete_white"/>
+
+                                </FrameLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <include layout="@layout/fragment_viewpager_preview_colors"/>
+
+                        <include layout="@layout/fragment_choose_color"/>
+
+                        <CheckBox
+                            android:id="@+id/add_to_calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:text="@string/add_to_calendar"
+                            android:textColor="@color/text_toolbar"
+                            android:textSize="16sp"/>
+
+                        <include layout="@layout/fragment_cancel_save"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</merge>
