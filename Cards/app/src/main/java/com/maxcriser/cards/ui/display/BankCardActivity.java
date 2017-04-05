@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
-import com.maxcriser.cards.CoreApplication;
+import com.maxcriser.cards.Core;
 import com.maxcriser.cards.R;
 import com.maxcriser.cards.async.OwnAsyncTask;
 import com.maxcriser.cards.async.task.RemovePhoto;
@@ -155,7 +155,7 @@ public class BankCardActivity extends Activity {
 
         registerForContextMenu(materialDesignFAM);
 
-        dbHelper = ((CoreApplication) getApplication()).getDatabaseHelper(this);
+        dbHelper = ((Core) getApplication()).getDatabaseHelper(this);
 
         Picasso.with(this).load(Uri.parse(firstPhoto)).placeholder(R.drawable.camera_card_size_light).into(ivFrontPhoto);
         Picasso.with(this).load(Uri.parse(secondPhoto)).placeholder(R.drawable.camera_card_size_light).into(ivBackPhoto);

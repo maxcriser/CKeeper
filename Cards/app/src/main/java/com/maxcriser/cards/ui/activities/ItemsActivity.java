@@ -47,7 +47,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.maxcriser.cards.CoreApplication;
+import com.maxcriser.cards.Core;
 import com.maxcriser.cards.R;
 import com.maxcriser.cards.anim.FlipAnimation;
 import com.maxcriser.cards.async.OnResultCallback;
@@ -265,7 +265,7 @@ public class ItemsActivity extends AppCompatActivity implements LoaderManager.Lo
         });
         title.setText(typeItems);
 
-        dbHelper = ((CoreApplication) getApplication()).getDatabaseHelper(this);
+        dbHelper = ((Core) getApplication()).getDatabaseHelper(this);
 
         recyclerItems.setHasFixedSize(true);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);

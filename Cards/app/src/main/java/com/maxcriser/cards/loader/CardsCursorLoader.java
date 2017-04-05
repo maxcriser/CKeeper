@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.content.CursorLoader;
 
-import com.maxcriser.cards.CoreApplication;
+import com.maxcriser.cards.Core;
 import com.maxcriser.cards.database.DatabaseHelper;
 import com.maxcriser.cards.database.DatabaseHelperImpl;
 
@@ -27,7 +27,7 @@ public class CardsCursorLoader extends CursorLoader {
         this.SQL_WITH_QUERY = getSqlWithQuery(modelClass);
         this.SQL_ALL_ITEMS = getSqlAllItems(modelClass);
         this.mQuery = pQuery;
-        this.db = ((CoreApplication) app).getDatabaseHelper(context);
+        this.db = ((Core) app).getDatabaseHelper(context);
     }
 
     @Override

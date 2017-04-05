@@ -5,7 +5,7 @@ import android.content.Context;
 
 import com.maxcriser.cards.database.DatabaseHelper;
 
-public class CoreApplication extends Application {
+public class Core extends Application {
 
     private DatabaseHelper mDatabaseHelper;
 
@@ -16,7 +16,8 @@ public class CoreApplication extends Application {
         return mDatabaseHelper;
     }
 
-    public CoreApplication() {
+    public Core() {
         ContextHolder.set(this);
     }
+
 }

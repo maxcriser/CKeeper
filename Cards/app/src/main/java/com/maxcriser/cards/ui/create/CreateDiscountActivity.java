@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.maxcriser.cards.CoreApplication;
+import com.maxcriser.cards.Core;
 import com.maxcriser.cards.R;
 import com.maxcriser.cards.async.OnResultCallback;
 import com.maxcriser.cards.async.OwnAsyncTask;
@@ -132,7 +132,7 @@ public class CreateDiscountActivity extends AppCompatActivity {
         mScrollView = (ScrollView) findViewById(R.id.scrollView);
         final RobotoRegular title = (RobotoRegular) findViewById(R.id.title_toolbar);
         nameEditText = (EditText) findViewById(R.id.id_edit_text_name_discount);
-        db = ((CoreApplication) getApplication()).getDatabaseHelper(this);
+        db = ((Core) getApplication()).getDatabaseHelper(this);
         title.setText(getResources().getString(R.string.new_discount_title));
         final Intent barcodeIntent = getIntent();
         final String barcode = barcodeIntent.getStringExtra(TAG_BARCODE);

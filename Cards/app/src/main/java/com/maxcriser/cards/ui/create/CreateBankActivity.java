@@ -28,7 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.pinball83.maskededittext.MaskedEditText;
-import com.maxcriser.cards.CoreApplication;
+import com.maxcriser.cards.Core;
 import com.maxcriser.cards.R;
 import com.maxcriser.cards.async.OnResultCallback;
 import com.maxcriser.cards.async.OwnAsyncTask;
@@ -121,7 +121,7 @@ public class CreateBankActivity extends AppCompatActivity {
         removeBack = (FrameLayout) findViewById(R.id.remove_back);
         removeFront = (FrameLayout) findViewById(R.id.remove_front);
         statusScan = true;
-        db = ((CoreApplication) getApplication()).getDatabaseHelper(this);
+        db = ((Core) getApplication()).getDatabaseHelper(this);
         DateToView.setDateToCreditView(validDate, calendar);
         final RobotoRegular title = (RobotoRegular) findViewById(R.id.title_toolbar);
         title.setText(getResources().getString(R.string.bank_title));

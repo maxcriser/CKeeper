@@ -30,7 +30,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.maxcriser.cards.CoreApplication;
+import com.maxcriser.cards.Core;
 import com.maxcriser.cards.R;
 import com.maxcriser.cards.async.OnResultCallback;
 import com.maxcriser.cards.async.OwnAsyncTask;
@@ -248,7 +248,7 @@ public class CreateTicketActivity extends AppCompatActivity {
         photoFileNameBack = ListConstants.BEG_FILE_NAME_TICKET + uniqueString + "back_photo.jpg";
         DateToView.setDateToTicketView(date, calendar);
         DateToView.setTimeToView(time, calendar);
-        db = ((CoreApplication) getApplication()).getDatabaseHelper(this);
+        db = ((Core) getApplication()).getDatabaseHelper(this);
         title.setText(getResources().getString(R.string.new_ticket_title));
 
         final PreviewColor listPreviewColor = ListPreview.colors.get(0);
