@@ -14,7 +14,8 @@
         android:gravity="center|start"
         android:text="@string/name"
         android:textColor="@color/text_toolbar"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp" />
 
     <EditText
         android:id="@+id/rename_discount_title"

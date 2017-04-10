@@ -198,7 +198,8 @@
                                 android:layout_marginTop="4dp"
                                 android:layout_weight="1"
                                 card_view:cardCornerRadius="2dp"
-                                card_view:cardElevation="2dp">
+                                card_view:cardElevation="2dp"
+                                android:layout_marginRight="4dp">
 
                                 <com.maxcriser.cards.view.labels.RobotoThin
                                     android:id="@+id/date"

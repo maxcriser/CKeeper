@@ -21,7 +21,8 @@
             android:text="@string/feedback"
             android:textColor="@color/text_toolbar"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_left_title_toolbar" />
 
         <ImageButton
             android:id="@+id/imageButton"

@@ -62,7 +62,8 @@
                             android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="120sp"
-                            android:visibility="gone"/>
+                            android:visibility="gone"
+                            android:layout_marginRight="8dp" />
 
                         <include layout="@layout/fragment_create_front_back_photo"/>
 

@@ -62,7 +62,8 @@
                                         android:paddingStart="16dp"
                                         android:text="@string/name"
                                         android:textColor="@color/text_toolbar"
-                                        android:textSize="18sp"/>
+                                        android:textSize="18sp"
+                                        android:paddingLeft="16dp" />
 
                                     <EditText
                                         android:id="@+id/rename_discount_title"
@@ -73,7 +74,8 @@
                                         android:maxLines="1"
                                         android:paddingStart="16dp"
                                         android:textColor="@color/text_toolbar"
-                                        android:textSize="16sp"/>
+                                        android:textSize="16sp"
+                                        android:paddingLeft="16dp" />
 
                                 </LinearLayout>
 
@@ -113,7 +115,8 @@
                                         android:onClick="onDateClicked"
                                         android:textColor="@color/text_toolbar"
                                         android:textSize="16sp"
-                                        tools:text="16 SEPT 2016"/>
+                                        tools:text="16 SEPT 2016"
+                                        android:layout_marginLeft="16dp" />
 
                                     <com.maxcriser.cards.view.labels.RobotoThin
                                         android:id="@+id/time"
@@ -127,7 +130,8 @@
                                         android:textAllCaps="true"
                                         android:textColor="@color/text_toolbar"
                                         android:textSize="16sp"
-                                        tools:text="12:30 PM"/>
+                                        tools:text="12:30 PM"
+                                        android:layout_marginRight="16dp" />
 
                                 </android.support.v7.widget.CardView>
 

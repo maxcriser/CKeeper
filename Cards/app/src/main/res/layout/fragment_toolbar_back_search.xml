@@ -34,7 +34,8 @@
                 android:text="@string/app_name"
                 android:textColor="@color/text_toolbar"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:paddingLeft="16dp" />
 
             <ImageButton
                 android:id="@+id/search_image_toolbar"

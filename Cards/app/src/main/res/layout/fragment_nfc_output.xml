@@ -31,7 +31,8 @@
                 android:layout_gravity="center|start"
                 android:layout_marginBottom="-12dp"
                 android:layout_marginStart="24dp"
-                android:src="@drawable/pos_machine"/>
+                android:src="@drawable/pos_machine"
+                android:layout_marginLeft="24dp" />
 
             <ImageView
                 android:id="@+id/long_hand"
@@ -40,7 +41,8 @@
                 android:layout_gravity="end"
                 android:layout_marginBottom="-30dp"
                 android:layout_marginEnd="-24dp"
-                android:src="@drawable/long_hand"/>
+                android:src="@drawable/long_hand"
+                android:layout_marginRight="-24dp" />
 
         </FrameLayout>
     </LinearLayout>
